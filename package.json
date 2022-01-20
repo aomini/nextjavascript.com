@@ -1,0 +1,30 @@
+{
+  "name": "australia",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@heroicons/react": "^1.0.5",
+    "@reach/portal": "^0.16.2",
+    "clsx": "^1.1.1",
+    "next": "12.0.7",
+    "react": "17.0.2",
+    "react-dom": "17.0.2",
+    "react-headroom": "^3.2.0",
+    "react-html-parser": "^2.0.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.16.0",
+    "@babel/eslint-parser": "^7.16.3",
+    "autoprefixer": "^10.4.0",
+    "eslint": "8.4.1",
+    "eslint-config-next": "12.0.7",
+    "eslint-config-rakeshshrestha": "^2.0.4",
+    "postcss": "^8.4.4",
+    "tailwindcss": "^3.0.1"
+  }
+}

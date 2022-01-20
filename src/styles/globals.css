@@ -1,0 +1,88 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .h1 {
+    @apply text-5xl mb-6 font-work-sans leading-[3.2rem] md:leading-[3rem];
+  }
+
+  .h2 {
+    @apply text-4xl mb-6 font-work-sans;
+  }
+
+  .h3 {
+    @apply text-3xl mb-6 font-work-sans;
+  }
+
+  .h4 {
+    @apply text-2xl mb-6 font-work-sans;
+  }
+
+  .h5 {
+    @apply text-xl mb-6 font-work-sans;
+  }
+
+  .body {
+    @apply text-base mb-6 font-work-sans;
+  }
+
+  h1 {
+    @apply text-3xl mb-6 font-work-sans font-semibold;
+  }
+
+  h2 {
+    @apply text-2xl mb-6 font-semibold font-work-sans;
+  }
+
+  h3 {
+    @apply text-xl mb-6 font-semibold font-work-sans;
+  }
+
+  h4 {
+    @apply text-lg mb-6 font-semibold font-work-sans;
+  }
+
+  h5 {
+    @apply mb-6 text-base font-medium font-work-sans;
+  }
+
+  ul,
+  li,
+  p {
+    @apply text-lg mb-6;
+  }
+
+  /* Links */
+  .underlined {
+    @apply relative no-underline px-0;
+  }
+
+  .underlined:focus {
+    @apply outline-none no-underline;
+  }
+
+  .underlined:hover:after,
+  .active.underlined:after,
+  .underlined:focus:after,
+  .underlined.active {
+    transform: scaleX(1);
+  }
+
+  .underlined.active {
+    @apply text-white;
+  }
+
+  .underlined::after {
+    @apply h-[2px] block absolute content-[""] w-full bg-currrent left-0 -bottom-1 origin-left;
+    transform: scaleX(0);
+    transition: all 0.5s ease;
+  }
+}
+
+.headroom--pinned {
+  background: #dbdbdb6e;
+
+  border-bottom: 1px solid white;
+  backdrop-filter: saturate(180%) blur(5px);
+}

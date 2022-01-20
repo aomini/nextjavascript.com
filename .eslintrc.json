@@ -1,0 +1,6 @@
+{
+  "extends": ["rakeshshrestha", "rakeshshrestha/react"],
+  "rules": {
+    "import/no-unresolved": "warn"
+  }
+}
