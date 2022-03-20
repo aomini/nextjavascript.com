@@ -11,19 +11,19 @@ const HamburgerMenu = dynamic(() => import('../HambugerMenu'));
 
 /** Top navigations */
 const navigations = [
+  // {
+  //   title: 'Home',
+  //   link: '/',
+  //   pattern: '/',
+  // },
+  // {
+  //   title: 'Blog',
+  //   link: '/blogs',
+  //   pattern: '/blogs',
+  //   quickLink: true,
+  // },
   {
-    title: 'Home',
-    link: '/',
-    pattern: '/',
-  },
-  {
-    title: 'Blog',
-    link: '/blogs',
-    pattern: '/blogs',
-    quickLink: true,
-  },
-  {
-    title: 'About',
+    title: 'Author',
     link: '/about-us',
     pattern: '/about-us',
   },
@@ -110,30 +110,6 @@ const Navbar = ({ color, heading }) => {
                 }`}
               />
             </button>
-            {/* <button
-              className='flex flex-col h-12 w-12 border-2 border-black rounded justify-center items-center group'
-              onClick={() => setIsOpen(!isOpen)}
-            >
-              <div
-                className={`${genericHamburgerLine} ${
-                  isOpen
-                    ? 'rotate-45 translate-y-3 opacity-50 group-hover:opacity-100'
-                    : 'opacity-50 group-hover:opacity-100'
-                }`}
-              />
-              <div
-                className={`${genericHamburgerLine} ${
-                  isOpen ? 'opacity-0' : 'opacity-50 group-hover:opacity-100'
-                }`}
-              />
-              <div
-                className={`${genericHamburgerLine} ${
-                  isOpen
-                    ? '-rotate-45 -translate-y-3 opacity-50 group-hover:opacity-100'
-                    : 'opacity-50 group-hover:opacity-100'
-                }`}
-              />
-            </button> */}
           </div>
           <div
             className='md:items-center hidden sm:show md:flex justify-end items-left w-full md:w-auto md:order-1 mr-0 flex-col-reverse xl:flex-row lg:flex-row md:flex-row sm:flex-col-reverse flex-grow mt-4 xl:mt-0 lg:mt-0 md:mt-0 sm:mt-4'
@@ -162,7 +138,7 @@ const Navbar = ({ color, heading }) => {
                 </li>
               ))}
             </ul>
-            <Button
+            {/* <Button
               size='sm'
               color='info'
               variant='contained'
@@ -174,7 +150,7 @@ const Navbar = ({ color, heading }) => {
               )}
             >
               Get a Quote
-            </Button>
+            </Button> */}
           </div>
         </div>
       </nav>

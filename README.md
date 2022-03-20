@@ -6,6 +6,10 @@ Is a blogging website for javascript and it's frameworks primarily focusing on n
 
 You can use this repository however you like. No credits required.
 
+## Usage
+
+Main brain only contains the blog part. For full design [branch](https://github.com/aomini/nextjavascript.com/tree/dev/theme).
+
 ## Getting Started
 
 First, run the development server:
